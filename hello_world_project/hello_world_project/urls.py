@@ -20,5 +20,6 @@ from hello_world import views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('hello_world.urls')),
-    url(r'^about/', views.about, name='about')
+    url(r'^about/', views.about, name='about'),
+    url(r'^better/$', views.better, name='better')
 ]
